@@ -10,7 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25986977-ae89-44f1-83df-df93fc6a4e67" name="Default Changelist" comment="" />
+    <list default="true" id="25986977-ae89-44f1-83df-df93fc6a4e67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/signup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/boekenoverzicht.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,10 +47,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/HTML/Includes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +71,20 @@
       <workItem from="1606119713872" duration="2512000" />
       <workItem from="1606134109755" duration="5112000" />
       <workItem from="1606289774790" duration="937000" />
-      <workItem from="1606293229554" duration="1101000" />
+      <workItem from="1606293229554" duration="3120000" />
+      <workItem from="1606306479334" duration="2379000" />
+      <workItem from="1606472013835" duration="239000" />
+      <workItem from="1606495047848" duration="208000" />
+      <workItem from="1606495497371" duration="1681000" />
+      <workItem from="1606555674752" duration="7000" />
+      <workItem from="1606555695676" duration="5498000" />
+      <workItem from="1606725841748" duration="1359000" />
+      <workItem from="1606728296303" duration="1487000" />
+      <workItem from="1606738602252" duration="5775000" />
+      <workItem from="1606893372255" duration="2510000" />
+      <workItem from="1606897259370" duration="2142000" />
+      <workItem from="1606911459409" duration="635000" />
+      <workItem from="1607073210288" duration="3019000" />
     </task>
     <servers />
   </component>
@@ -76,10 +104,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="570" y="219" key="#PHP" timestamp="1606121162831">
+    <state x="570" y="219" key="#PHP" timestamp="1606728740230">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="570" y="219" key="#PHP/0.25.1792.1095@0.25.1792.1095" timestamp="1606121162831" />
+    <state x="570" y="219" key="#PHP/1792.127.1194.809/0.25.1792.1095@0.25.1792.1095" timestamp="1606728740230" />
     <state x="487" y="241" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1606136395473">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -88,10 +117,11 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="634" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1606138167591" />
-    <state x="716" y="500" key="NewPhpFileDialog" timestamp="1606121127008">
+    <state x="716" y="500" key="NewPhpFileDialog" timestamp="1606900018033">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state x="716" y="500" key="NewPhpFileDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1606121127008" />
+    <state x="716" y="500" key="NewPhpFileDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1606900018033" />
+    <state x="716" y="500" key="NewPhpFileDialog/1792.127.1194.809/0.25.1792.1095@0.25.1792.1095" timestamp="1606739170833" />
     <state x="657" y="279" key="RollbackChangesDialog" timestamp="1606138879756">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -104,5 +134,18 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="687" y="234" width="1750" height="1076" key="dock-window-1/0.25.1792.1095@0.25.1792.1095" timestamp="1606139104084" />
+    <state x="597" y="205" width="597" height="735" key="find.popup" timestamp="1606726987384">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="597" y="205" width="597" height="735" key="find.popup/1792.127.1194.809/0.25.1792.1095@0.25.1792.1095" timestamp="1606726987384" />
+    <state x="561" y="265" key="run.anything.popup" timestamp="1607076635059">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="561" y="265" key="run.anything.popup/0.25.1792.1095@0.25.1792.1095" timestamp="1607076635059" />
+    <state x="561" y="269" width="670" height="676" key="search.everywhere.popup" timestamp="1606897053477">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="561" y="269" width="670" height="676" key="search.everywhere.popup/0.25.1792.1095@0.25.1792.1095" timestamp="1606897053477" />
+    <state x="561" y="269" width="670" height="676" key="search.everywhere.popup/1792.127.1194.809/0.25.1792.1095@0.25.1792.1095" timestamp="1606560666611" />
   </component>
 </project>
