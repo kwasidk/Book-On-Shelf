@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-dark">
     <a class="navbar-brand" href="#">Book-on-Shelf</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +8,7 @@
         <ul class="navbar-nav">
             <?php
             if (isset($_SESSION['ingelogd'])) {
-                if ($_SESSION['ingelogd'] == 'Admin') {
+                if ($_SESSION['ingelogd'] == 'Beheerder') {
                     $menuItems = array(
                         array('Geleendeboeken', 'Geleende Boeken'),
                         array('Boekenoverzicht', 'Boeken Overzicht'),

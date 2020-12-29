@@ -1,7 +1,5 @@
-<?php include "navbar.php"; ?>
-
 <div class="signup-form center-div">
-    <form action="" method="post">
+    <form action="PHP/Registreren.php" method="post">
         <h2>Book-on-Shelf Registreren</h2>
         <p>Registreer je om een account aan te maken!</p>
         <hr>
@@ -48,13 +46,8 @@
         </div>
 
         <div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Wachtwoord Verifieren"
-                   required="required">
-        </div>
-
-        <div class="form-group">
             <label>Geboortedatum</label>
-            <input class="form-control" type="date" placeholder="Geboortedatum" id="example-date-input"
+            <input class="form-control" type="date" name="Geboortedatum" placeholder="Geboortedatum" id="example-date-input"
                    required="required">
         </div>
 
