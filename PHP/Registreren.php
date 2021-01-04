@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "Private/connection.php";
+include "../Private/connection.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $email = $_POST['Email'];

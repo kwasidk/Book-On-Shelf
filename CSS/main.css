@@ -91,3 +91,8 @@ h1, p{
     padding-bottom: 15px;
     text-align: center;
 }
+
+.m-r-1em{ margin-right:1em; }
+.m-b-1em{ margin-bottom:1em; }
+.m-l-1em{ margin-left:1em; }
+.mt0{ margin-top:0; }

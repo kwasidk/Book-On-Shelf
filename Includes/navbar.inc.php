@@ -12,7 +12,7 @@
                     $menuItems = array(
                         array('Geleendeboeken', 'Geleende Boeken'),
                         array('Boekenoverzicht', 'Boeken Overzicht'),
-                        array('Boektoevoegen', 'Boek Toevoegen')
+                        array('Boektoevoegen', 'Boek Toevoegen'),
 
                     );
                 } elseif ($_SESSION['ingelogd'] == 'Klant') {
@@ -32,6 +32,7 @@
             foreach ($menuItems as $menuItem) {
 
                 echo '<li class="nav-item"><a class="nav-link" href="index.php?page=' . $menuItem[0] . '" >' . $menuItem[1] . '</a>';
+
 
             }
 

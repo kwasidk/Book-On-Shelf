@@ -14,10 +14,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     try{
 
         // insert query
-        $query = 'INSERT INTO tblBooks (BoekNaam, Schrijver, Genre, ISBN, Taal, Pagina, Voorraad) VALUE (:bookName,:author,:genre,:ISBN,:language,:page,:stock) ';
+        $sql = 'INSERT INTO tblBooks (BoekNaam, Schrijver, Genre, ISBN, Taal, Pagina, Voorraad) VALUE (:bookName,:author,:genre,:ISBN,:language,:page,:stock) ';
 
         // prepare query for execution
-        $stmt = $conn->prepare($query);
+        $stmt = $conn->prepare($sql);
 
         // bind the parameters
         $stmt->bindParam(':bookName', $book);
