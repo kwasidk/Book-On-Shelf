@@ -12,6 +12,7 @@ $sth->execute();
 if($rsUser = $sth->fetch(PDO::FETCH_ASSOC)){
     if ($_POST['password'] == $rsUser['Wachtwoord']) {
         $_SESSION['ingelogd'] = $rsUser['Rol'];
+        $_SESSION['userID'] = $rsUser['ID'];
         header('location: ../index.php?page=dashbord');
     } else {
         $_SESSION['Melding'] = 'Gegevens kloppen niet, probeer het opnieuw!';
@@ -23,3 +24,4 @@ if($rsUser = $sth->fetch(PDO::FETCH_ASSOC)){
     header('location: ../index.php?page=Home');
 
 }
+

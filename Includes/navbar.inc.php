@@ -10,13 +10,14 @@
             if (isset($_SESSION['ingelogd'])) {
                 if ($_SESSION['ingelogd'] == 'Beheerder') {
                     $menuItems = array(
-                        array('Geleendeboeken', 'Geleende Boeken'),
                         array('Boekenoverzicht', 'Boeken Overzicht'),
                         array('Boektoevoegen', 'Boek Toevoegen'),
+                        array('ledentoevoegen', 'Leden Toevoegen')
 
                     );
                 } elseif ($_SESSION['ingelogd'] == 'Klant') {
                     $menuItems = array(
+                            
                         array('Geleendeboeken', 'Geleende Boeken'),
                         array('Boekenoverzicht', 'Boeken Overzicht')
                     );
