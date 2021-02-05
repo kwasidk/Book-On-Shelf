@@ -7,15 +7,14 @@
     <?php
     include 'Private/connection.php';
 
-//    $sql = 'SELECT tblBooks.ID, BoekNaam, Schrijver, Genre, ISBN, Taal, Pagina, Voorraad, COUNT(b.ID) AS uitgeleend
-//FROM tblBooks
-//    LEFT JOIN tblBorrowedBooks b
-//        ON tblBooks.ID = b.FK_BookID
-//               AND b.startdate IS NOT NULL
-//               AND b.enddate IS NULL
-//GROUP BY ID  ';
+    $sql = 'SELECT tblBooks.ID, BoekNaam, Schrijver, Genre, ISBN, Taal, Pagina, Voorraad, COUNT(b.ID) AS uitgeleend 
+FROM tblBooks 
+    LEFT JOIN tblBorrowedBooks b 
+        ON tblBooks.ID = b.FK_BookID 
+               AND b.startdate IS NOT NULL 
+               AND b.enddate IS NULL 
+GROUP BY ID  ';
 
-    $sql = 'SELECT * FROM tblBooks';
 
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -52,8 +51,7 @@
                     <td><?= $row['ISBN'] ?></td>
                     <td><?= $row['Taal'] ?></td>
                     <td><?= $row['Pagina'] ?></td>
-<!--                    <td>--><?//= $row['Voorraad'] - $row['uitgeleend']?><!--/--><?//= $row['Voorraad'] ?><!--</td>-->
-                    <td><?= $row['Voorraad'] ?></td>
+                    <td><?= $row['Voorraad'] - $row['uitgeleend']?>/<?= $row['Voorraad'] ?></td>
                     <td>
 
                         <?php if ($_SESSION['ingelogd'] == 'Beheerder') { ?>
@@ -68,7 +66,7 @@
                         <?php } else { ?>
                             <form action="PHP/BorrowBooks.php" method="post">
                                 <input type="hidden" name="id" value="<?= $row['ID'] ?>">
-                                <button type="submit"><?= $row['Voorraad'] > 0 ? 'Lenen' : 'Reserveren' ?></button>
+                                <button type="submit"><?= $row['Voorraad'] - $row['uitgeleend'] > 0 ? 'Lenen' : 'Reserveren' ?></button>
                             </form>
 
                         <?php } ?>
