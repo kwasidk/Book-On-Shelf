@@ -19,7 +19,8 @@
                     $menuItems = array(
                             
                         array('Geleendeboeken', 'Geleende Boeken'),
-                        array('Boekenoverzicht', 'Boeken Overzicht')
+                        array('Boekenoverzicht', 'Boeken Overzicht'),
+                        array('Reserveringen', 'Reserveringen')
                     );
                 }
             } else {

@@ -1,22 +1,20 @@
 <div class="container">
 
     <div class="page-header">
-        <h1>Je geleende boeken!</h1>
+        <h1>Reseveringen</h1>
     </div>
 
     <?php
     include 'Private/connection.php';
 
     $sql = 'SELECT tblBorrowedBooks.ID, BoekNaam, Schrijver, Genre, ISBN, Taal, Pagina, startdate 
-FROM tblBorrowedBooks 
-    INNER JOIN tblBooks tB 
-        on tblBorrowedBooks.FK_BookID = tB.ID 
-WHERE startdate IS NOT NULL AND enddate IS NULL AND FK_UserID = :UserID';
+            FROM tblBorrowedBooks 
+            INNER JOIN tblBooks tB on tblBorrowedBooks.FK_BookID = tB.ID 
+            WHERE startdate IS NULL AND enddate IS NULL AND FK_UserID = :UserID';
 
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':UserID', $_SESSION['userID']);
     $stmt->execute();
-
 
     $num = $stmt->rowCount();
 
@@ -34,7 +32,6 @@ WHERE startdate IS NOT NULL AND enddate IS NULL AND FK_UserID = :UserID';
                 <th>ISBN</th>
                 <th>Taal</th>
                 <th>Pagina</th>
-                <th>Acties</th>
 
             </tr>
             <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
@@ -51,8 +48,8 @@ WHERE startdate IS NOT NULL AND enddate IS NULL AND FK_UserID = :UserID';
                         <?php if ($_SESSION['ingelogd'] == 'Klant') ?>
                         <form action="PHP/Return.php" method="post">
                             <input type="hidden" name="id" value="<?= $row['ID'] ?>">
-                            <input type="hidden" name="reservation" value="0">
-                            <button type="submit">Terug brengen</button>
+                            <input type="hidden" name="resevation" value="1">
+                            <button type="submit">Annuleren</button>
                         </form>
 
 

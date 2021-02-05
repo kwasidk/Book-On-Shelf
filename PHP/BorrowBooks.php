@@ -9,7 +9,7 @@ $stmt->bindParam(':bookID', $bookID);
 $stmt->execute();
 $inStock = $stmt->fetch(PDO::FETCH_NUM)[0];
 
-$sql = 'SELECT COUNT(*) FROM tblBorrowedBooks WHERE FK_BookID = :bookID';
+$sql = 'SELECT COUNT(*) FROM tblBorrowedBooks WHERE FK_BookID = :bookID AND startdate IS NOT NULL AND enddate is NULL';
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':bookID', $bookID);
 $stmt->execute();
