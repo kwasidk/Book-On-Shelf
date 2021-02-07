@@ -109,8 +109,7 @@ CREATE TABLE `tblUsers` (
 
 LOCK TABLES `tblUsers` WRITE;
 /*!40000 ALTER TABLE `tblUsers` DISABLE KEYS */;
-INSERT INTO `tblUsers` VALUES (1,'Kwasi','','Kattah','kwasispem@xs4all.nl','De Gildekamp',3214,'6545 KZ','Nijmegen','wagwan123','2002-06-23','Beheerder'),(2,'Luuk','van der','Stroom','luuk@strmco.nl','Zuiderhout',11,'6718 GM','Ede','strmcokleding!','2001-09-17','Klant'),(3,'David','van','Munster','dvm@live.nl','Arkelstein',1,'6714 AW','Ede','kpopsterinkorea!','2001-06-27','Klant'),(4,'Ivo',NULL,' Bakker','yeet@yeet.nl','Herengracht',123,'7432KZ','Zwolle','1234','2014-02-14','Klant'),(5,'Daan',NULL,'Heikamp','Daanheikamp1234566@gmail.com','Papenkoplaan',30,'6713DV','Ede','daan123','2001-01-08','Klant'),(6,'Luuk',NULL,'Burgers','luukburgers@rijnijssel.nl','Heemstedestraat',5,'7834KR','Arnhem','luukb123','2010-06-17','Klant');
-/*!40000 ALTER TABLE `tblUsers` ENABLE KEYS */;
+INSERT INTO `tblUsers` VALUES () /* In this SQL line was some classified information, I cant make it public. */
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
